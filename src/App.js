@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Todo from './components/Todo'
+// import Modal from "./components/Modal";
+// import Backdrop from "./components/Backdrop";
+
+// function TableHeader() {
+//   return (
+//     <thead>
+//       <tr>
+//         <th>Name</th>
+//         <th>Job</th>
+//         <th>Remove</th>
+//       </tr>
+//     </thead>
+//   );
+// }
+
+// function TableBody() {
+//   return (
+//     <tr>
+//       <td>Name</td>
+//       <td>Job</td>
+//     </tr>
+//   );
+// }
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <h1>My List</h1>
+      <Todo text='Learn React' />
+      <br></br>
+      <Todo text='Beat React'/>
+      <br></br>
+      <Todo text='Win React'/>
+      {/* <Modal /> */}
+      {/* <Backdrop /> */}
     </div>
   );
 }
 
 export default App;
+
+
+
+//<Todo text='Learn React'/>
+//key/value pairs (text / learn react )
