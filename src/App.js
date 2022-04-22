@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="app">
       <h1>My List</h1>
-      <Todo text='Learn React' />
+      <Todo text='Learn React' other="other" />
       <br></br>
       <Todo text='Beat React'/>
       <br></br>
